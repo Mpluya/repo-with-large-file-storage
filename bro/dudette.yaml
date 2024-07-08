@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: dudette
+  name: dudette
+spec:
+  containers:
+  - image: nginx
+    name: dudette
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
